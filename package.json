@@ -9,7 +9,13 @@
     "build": "strapi build",
     "strapi": "strapi",
     "deploy": "git push heroku HEAD:main",
-    "start_node": "node index.js"
+    "start_node": "node index.js",
+    "dev": "react-scripts start",
+    "start_serve": "serve -s build",
+    "build_react_scripts": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "@strapi/plugin-i18n": "4.4.3",
